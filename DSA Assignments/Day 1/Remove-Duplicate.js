@@ -9,8 +9,3 @@ var removeDuplicates = function(nums) {
     return k;
 };
 
-// Example usage
-let nums = [1, 1, 2, 2, 3, 3, 4, 4, 5];
-let k = removeDuplicates(nums);
-console.log('k:', k); 
-console.log('Updated array:', nums.slice(0, k)); 
