@@ -7,15 +7,14 @@ function findSaddlePoint(matrix) {
       let minRow = matrix[i][0];
       let minCol = 0;
   
-      // Find the minimum element in the current row
+     
       for (let j = 1; j < n; j++) {
         if (matrix[i][j] < minRow) {
           minRow = matrix[i][j];
           minCol = j;
         }
       }
-  
-      // Check if the minimum element is also the maximum in its column
+
       let isMaxCol = true;
       for (let k = 0; k < m; k++) {
         if (matrix[k][minCol] > minRow) {
